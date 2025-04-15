@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+@font-face{
+    font-family: 'Trap';
+    src:  url(fonte/Trap-Sans-Serif-Typeface/Trap_/Trap_V1.1/Trap-Regular.otf) format('opentype');
+    font-weight: normal;
+}
+
+:root{
+   --cor0: #ff0000;
+   --cor1: #D52323;
+   --cor2: #AA3939;
+   --cor3: #804040;
+   --cor4: #553939;
+
+   --font0: Arial, Verdana, Helvetica, sans-serif;
+   --font1: 'Trap', cursive;
+   --font2: 'Bebas Neue', sans-serif;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+p {
+    padding: 10px 0px;
+}
+
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor0));
+    min-height: 120px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+header > h1{
+    padding-bottom: 15px;
+    font-size: 2em;
+    font-family: var(--font1);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.575);
+}
+
+header >p{
+    font-size: 1.2em;
+    font-family: var(--font1);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav{
+    background-color: var(--cor0);
+    font-family: var(--font2);
+    box-shadow: 0px 5px 0px black;
+    padding-bottom: 10px;
+}
+
+
+nav > a{
+    color: blue;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 2px;
+    transition-duration: 0.5s;
+    font-size: larger;
+}
+
+nav > a:hover{
+    background-color: var(--cor4);
+    color: var(--cor2);
+}
+
+
+p{
+    font-size: 1.2em;
+}
+
+main{
+    background-color: var(--cor4);
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+
+    min-width: 320px;
+    max-width: 800px;
+    img{
+        max-width: 100%;
+    }
+}
+
+div.video{
+    background-color: var(--cor1);
+    margin: 0px -20px 10px -20px;
+    padding-bottom: 65%;
+    position: relative;
+    
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+main a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+article > h1{
+    font-family: var(--font1);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+article > p{
+    font-family: var(--font0);
+}
+
+aside {
+    background-color: var(--cor3);
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.281);
+}
+
+aside > h1{
+    font-size: 1.6em;
+    background-color: var(--cor2);
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.185);
+}
+aside > h2{
+    font-size: 1.3em;
+}
+
+aside > ul{
+    list-style-position: inside;
+    font-size: 1em;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+}
+
+.red{
+    color: var(--cor1);
+    padding: 10px 0px;
+}
+
+a{
+    color: white;
+}
+
+hr{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
